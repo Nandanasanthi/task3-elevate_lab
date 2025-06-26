@@ -1,0 +1,32 @@
+SELECT * FROM Member;
+
+SELECT name, email FROM Member;
+
+
+SELECT name FROM Member WHERE phone IS NOT NULL;
+
+SELECT title, author FROM Book WHERE available = TRUE AND genre = 'Education';
+
+
+SELECT title FROM Book WHERE genre = 'Fiction' OR available IS NULL;
+
+
+SELECT * FROM Member WHERE name LIKE 'J%';
+
+
+SELECT * FROM Borrow WHERE borrow_date BETWEEN '2025-06-20' AND '2025-06-30';
+
+
+SELECT * FROM Book ORDER BY title ASC;
+
+
+SELECT * FROM Member ORDER BY member_id DESC;
+
+
+SELECT * FROM Book ORDER BY book_id DESC LIMIT 2;
+
+
+SELECT DISTINCT genre FROM Book;
+
+
+SELECT * FROM Book WHERE author IN ('Paulo Coelho', 'Korth');
